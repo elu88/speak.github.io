@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tracing-area {
+    width: calc(100vw - 40px); /* 100% width with some padding */
+    max-width: 600px; /* Limit width to 600px */
+    height: 300px; /* Adjust height as needed */
+    border: 2px solid #f69323;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden; /* Ensure canvas doesn't overflow */
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: 2px solid #f69323;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+}
+.button a {
+    background-color: #CB791C;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+#back {
+    position: absolute; /* Position the button absolutely */
+    bottom: 10px; /* 10px from the bottom */
+    left: 10px; /* 10px from the left */
+    color: white; /* Ensures text is visible */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensures button styling */
+    height: 100%; /* Ensures button styling */
+    line-height: 50px; /* Centers text vertically */
+  }

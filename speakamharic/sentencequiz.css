@@ -1,0 +1,104 @@
+body {
+    background-color: #f69323;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz {
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.word-box {
+    background-color: orange;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.option {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.option input[type="radio"] {
+    display: none;
+}
+
+.answer-box {
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.option input[type="radio"]:checked + .answer-box {
+    background-color: lightblue;
+    border-color: blue;
+}
+
+.answer-box:hover {
+    background-color: #f0f0f0;
+}
+
+.feedback {
+    margin-bottom: 20px;
+}
+
+#result {
+    font-weight: bold;
+}
+
+#submitBtn, #nextBtn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover, #nextBtn:hover {
+    background-color: darkblue;
+}
+.button a {
+    background-color: #CB791C;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+#back {
+    position: absolute; /* Position the button absolutely */
+    bottom: 10px; /* 10px from the bottom */
+    left: 10px; /* 10px from the left */
+    color: white; /* Ensures text is visible */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensures button styling */
+    height: 100%; /* Ensures button styling */
+    line-height: 50px; /* Centers text vertically */
+  }

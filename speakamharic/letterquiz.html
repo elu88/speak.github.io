@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amharic Quiz Game</title>
+    <link rel="stylesheet" href="letterquiz.css">
+</head>
+<body>
+   <div class="container">
+    <div class="button" id='#back'><a href="home.html">Back</a></div>
+        <div class="quiz">
+            <div class="question">
+                <h2>What letter is this?</h2>
+                <div class="word-box">
+                    <h1 id="word">Hello</h1>
+                </div>
+            </div>
+            <div class="options" id="options">
+                <label class="option">
+                    <input type="radio" name="answer" value="ሰላም">
+                    <div class="answer-box">ሰላም</div>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="ሃፕፕይ">
+                    <div class="answer-box">ሃፕፕይ</div>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="ጥሩ">
+                    <div class="answer-box">ጥሩ</div>
+                </label>
+            </div>
+            <div class="feedback">
+                <p id="result"></p>
+            </div>
+            <button id="submitBtn">Check Answer</button>
+            <button id="nextBtn" style="display: none;">Next</button>
+        </div>
+    </div>
+    <script src="letterquiz.js"></script>
+</body>
+</html>

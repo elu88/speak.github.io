@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Prevents body scroll */
+    float: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: 90vh; /* Adjust height to allow some margin */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.section {
+    margin: 20px 0;
+}
+
+h1 {
+    color: #333;
+    margin: 0; /* Removes default margin */
+    padding: 20px 0; /* Adds padding to match the container's padding */
+}
+
+h2 {
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f69323;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.button a {
+    background-color: #CB791C;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+#back {
+    position: absolute; /* Position the button absolutely */
+    bottom: 10px; /* 10px from the bottom */
+    left: 10px; /* 10px from the left */
+    color: white; /* Ensures text is visible */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensures button styling */
+    height: 100%; /* Ensures button styling */
+    line-height: 50px; /* Centers text vertically */
+  }

@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  #phone-frame {
+    width: 300px; /* Width similar to a phone */
+    height: 600px; /* Height similar to a phone */
+    background-color: #ffffff;
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; /* Hide initially */
+  }
+  
+  #quiz-container {
+    width: 90%;
+    height: 90%;
+    background-color: #f69323;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    position: relative; /* Added to use relative positioning for the back button */
+  }
+  
+  #title {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #CB791C;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .button:hover {
+    background-color: #b06a18;
+  }
+  
+  .button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #quiz {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  #start-test {
+    background-color: #CB791C;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+  }
+  
+  #start-test:hover {
+    background-color: #b06a18;
+  }
+  
+  #start {
+    display: none; /* Hide the Test Again button initially */
+  }
+  
+  #back {
+    position: absolute; /* Position the button absolutely */
+    bottom: 10px; /* 10px from the bottom */
+    left: 10px; /* 10px from the left */
+    color: white; /* Ensures text is visible */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensures button styling */
+    height: 100%; /* Ensures button styling */
+    line-height: 50px; /* Centers text vertically */
+  }
+  
+  .button.active {
+    background-color: #b06a18;
+  }
+  
