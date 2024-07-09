@@ -109,4 +109,24 @@ body {
   .button.active {
     background-color: #b06a18;
   }
-  
+  .button1 a {
+    background-color: #CB791C;
+    color: white;
+    padding: 8px 13px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+#back {
+    position: absolute; /* Position the button absolutely */
+    bottom: 10px; /* 10px from the bottom */
+    left: 10px; /* 10px from the left */
+    color: white; /* Ensures text is visible */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensures button styling */
+    height: 100%; /* Ensures button styling */
+    line-height: 50px; /* Centers text vertically */
+  }
