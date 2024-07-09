@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Activity</title>
+    <link rel="stylesheet" href="drawing.css">
+</head>
+<body>
+    <div class="container">
+        <div class="button" id='#back'><a href="home.html">Back</a></div>
+        <h1>Drawing Activity</h1>
+        <div class="tracing-area">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="controls">
+            <button id="startBtn">New Letter</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </div>
+
+    <!-- Audio elements for each Amharic character -->
+    <audio id="audio-ሀ" src="audio/ሀ.mp3"></audio>
+    <audio id="audio-ሁ" src="audio/ሁ.mp3"></audio>
+    <audio id="audio-ሂ" src="audio/ሂ.mp3"></audio>
+    <!-- Add more audio elements for other characters -->
+
+    <script src="drawing.js"></script>
+</body>
+</html>

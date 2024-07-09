@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amharic Speak Animation in Phone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .phone-container {
+            position: relative;
+            width: 400px;
+            height: 700px;
+            border-radius: 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .screen {
+            width: 100%;
+            height: 100%;
+            background: #F69323;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 1s ease-in-out; /* Smooth opacity transition */
+        }
+
+        .screen.hide {
+            opacity: 0; /* Hide screen by setting opacity to 0 */
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .text-container {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0; /* Start with opacity 0 for transition */
+            transition: opacity 1s ease; /* Smooth opacity transition */
+        }
+
+        .text-container.show {
+            opacity: 1; /* Show text container after delay */
+        }
+
+        .text-container.hide {
+            opacity: 0; /* Hide text container after delay */
+        }
+
+        .text {
+            font-style: italic;
+            font-size: 100px; /* Base font size */
+            margin: 5px 0; /* Add some margin for spacing */
+            transition: transform 1s ease-in-out, opacity 1s ease; /* Smooth transform and opacity transition */
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        /* Style for the "SPEAK" text */
+        .speak-text {
+            font-size: 70px; /* Adjust the font size for SPEAK */
+            font-weight: bold; /* Adjust font weight for SPEAK */
+            color: #000; /* Adjust color for SPEAK */
+            transform: translateX(-100%); /* Start off-screen to the left */
+            margin-top: 50px; /* Adjust margin to position SPEAK */
+        }
+
+        /* Style for the "AMHARIC" text */
+        .amharic-text {
+            font-size: 70px; /* Adjust the font size for AMHARIC */
+            font-weight: bold; /* Adjust font weight for AMHARIC */
+            color: #000; /* Adjust color for AMHARIC */
+            transform: translateX(100%); /* Start off-screen to the right */
+            margin-top: 20px; /* Adjust margin to position AMHARIC */
+        }
+
+        .text-container.show .speak-text {
+            transform: translateX(0); /* Slide SPEAK into the center */
+        }
+
+        .text-container.show .amharic-text {
+            transform: translateX(0); /* Slide AMHARIC into the center */
+        }
+
+        .image-container {
+            position: absolute;
+            bottom: -70%; /* Start position below the screen */
+            left: 50%;
+            transform: translateX(-50%);
+            transition: bottom 2s ease-in-out, transform 2s ease-in-out; /* Smooth bottom and transform transition */
+            width: 70%;
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Center the image vertically */
+        }
+
+        .image-container img {
+            width: 120%;
+            height: auto;
+            transition: bottom 2s ease-in-out; /* Smooth transform and bottom transition */
+        }
+
+        .image-container.animate {
+            bottom: 20%; /* Final desired position */
+        }
+
+        .image-container.hide {
+            bottom: -70%; /* Hide the image by moving it down */
+        }
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        .navbar {
+            width: 100%;
+            background-color: rgb(218, 155, 67);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .navbar li {
+            margin: 0 10px;
+        }
+        .containers {
+            margin-top: 50px;
+            display: none;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 10px auto;
+            font-size: 18px;
+            background-color: #f69323;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #b06a18;
+
+        }
+        
+        .button a {
+            color: white; /* Ensures text is visible */
+            text-decoration: none; /* Remove underline from links */
+            display: block; /* Ensures button styling */
+            height: 100%; /* Ensures button styling */
+            line-height: 50px; /* Centers text vertically */
+        }
+            
+        .app-container {
+            display: none;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .gap {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-container">
+        <div class="screen">
+            <div class="container">
+                <div class="text-container">
+                    <div class="text speak-text">
+                        <i>SPEAK</i>
+                    </div>
+                    <div class="text amharic-text">
+                        <i>AMHARIC</i>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="jebena.png" alt="jebena">
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="app-container">
+    <nav class="navbar">
+        <ul>
+    <li><a href="info.html">Info</a></li>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  <div class="gap">
+        <button class="button"><a href="proficiency.html">Proficiency Test</a></button>
+        <button class="button"><a href="phrases.html">Common Phrases</a></button>
+        <button class="button"><a href="letterflashcards.html">Letter Flashcards</a></button>
+        <button class="button"><a href="lettervowelsflashcards.html">Vowel Flashcards</a></button>
+        <button class="button"><a href="letterquiz.html">Letter Practice</a></button>
+        <button class="button"><a href="wordquiz.html"> Word Practice</a></button>
+        <button class="button"><a href="sentencequiz.html">Sentence Practice</a></button>
+        <button class="button"><a href="drawing.html">Drawing Activity</a></button>
+        </div>
+    </div>
+    <script>
+  
+    setTimeout(function(){ 
+         document.querySelector(".app-container").style.display = "block"
+    },3500)
+ 
+        window.onload = function() {
+            const textContainer = document.querySelector('.text-container');
+            const image = document.querySelector('.image-container');
+            const screen = document.querySelector('.screen');
+
+            setTimeout(() => {
+                // Add the 'show' class to start the text animation
+                textContainer.classList.add('show');
+                image.classList.add('animate'); // Add animate class for image animation
+            }, 500); // Delay to ensure everything loads properly
+
+            setTimeout(() => {
+                // Remove the 'show' class and add the 'hide' class to hide elements after 5 seconds
+                textContainer.classList.remove('show');
+                textContainer.classList.add('hide');
+                image.classList.add('hide');
+                
+                // Hide the screen as well
+                screen.classList.add('hide');
+            }, 2500); // 500ms initial delay + 5000ms display time
+        };
+    </script>
+</body>
+</html>

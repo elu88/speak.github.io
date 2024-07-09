@@ -1,0 +1,111 @@
+body {
+    font-family: Times New Roman, sans-serif;
+    background-color: #F69323;
+    
+}
+header,
+footer {
+  text-align: center;
+}
+.hidden {
+    display: none;
+}
+
+#flashcard {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    transition: transform 0.6s;
+}
+
+.front {
+    background: white;
+}
+
+.back {
+    background: lightgray;
+    transform: rotateY(180deg);
+}
+
+#flashcard.flipped .front {
+    transform: rotateY(180deg);
+}
+
+#flashcard.flipped .back {
+    transform: rotateY(360deg);
+}
+
+button {
+    margin: 10px;
+    padding: 9px;
+    font-size: 16px;
+}
+#prev{
+    background-color: #CB791C;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  #next{
+    background-color: #CB791C;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  #back{
+    background-color: #CB791C;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  .button a{
+    background-color: #CB791C;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+#back1 {
+    position: absolute; /* Position the button absolutely */
+    bottom: 10px; /* 10px from the bottom */
+    left: 10px; /* 10px from the left */
+    color: white; /* Ensures text is visible */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensures button styling */
+    height: 100%; /* Ensures button styling */
+    line-height: 50px; /* Centers text vertically */
+  }
