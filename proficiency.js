@@ -122,142 +122,142 @@
     },
     {
       question: "What is the sound for the letter 'ሀ'?",
-     choices: ["a", "h", "e"],
-      correctAnswer: "h"
+     choices: ["ah", "he", "ye"],
+      correctAnswer: "he"
     },
     {
       question: "What is the sound for the letter 'ሁ'?",
-      choices: ["hi", "ha", "hu"],
+      choices: ["di", "ba", "hu"],
       correctAnswer: "hu"
     },
     {
       question: "What is the sound for the letter 'ሂ'?",
-      choices: ["hi", "hu", "ho"],
-      correctAnswer: "hi"
+      choices: ["hee", "ho", "go"],
+      correctAnswer: "hee"
     },
     {
       question: "What is the sound for the letter 'ሃ'?",
-      choices: ["he", "ha", "hi"],
+      choices: ["ja", "ha", "ju"],
       correctAnswer: "ha"
     },
     {
       question: "What is the sound for the letter 'ሄ'?",
-      choices: ["ha", "hu", "he"],
-      correctAnswer: "he"
+      choices: ["ha", "hae", "h'i"],
+      correctAnswer: "hae"
     },
     {
       question: "What is the sound for the letter 'ህ'?",
-      choices: ["h", "hi", "hu"],
-      correctAnswer: "h"
+      choices: ["se", "h'i", "be"],
+      correctAnswer: "h'i"
     },
     {
       question: "What is the sound for the letter 'ሆ'?",
-      choices: ["he", "ho", "hu"],
+      choices: ["de", "ho", "gu"],
       correctAnswer: "ho"
     },
     {
       question: "What is the sound for the letter 'ለ'?",
-      choices: ["la", "le", "l"],
-      correctAnswer: "l"
+      choices: ["lu", "le", "fe"],
+      correctAnswer: "le"
     },
     {
       question: "What is the sound for the letter 'ሉ'?",
-      choices: ["lu", "le", "li"],
+      choices: ["lu", "ve", "xi"],
       correctAnswer: "lu"
     },
     {
       question: "What is the sound for the letter 'ሊ'?",
-      choices: ["le", "li", "lu"],
-      correctAnswer: "li"
+      choices: ["ke", "lee", "nu"],
+      correctAnswer: "lee"
     },
     {
       question: "What is the sound for the letter 'ላ'?",
-     choices: ["le", "li", "la"],
+     choices: ["ze", "mi", "la"],
       correctAnswer: "la"
     },
     {
       question: "What is the sound for the letter 'ሌ'?",
-      choices: ["le", "la", "li"],
-      correctAnswer: "le"
+      choices: ["le", "lae", "lo"],
+      correctAnswer: "lae"
     },
     {
       question: "What is the sound for the letter 'ል'?",
-      choices: ["li", "l", "lu"],
-      correctAnswer: "l"
+      choices: ["di", "l'e", "vu"],
+      correctAnswer: "l'e"
     },
     {
       question: "What is the sound for the letter 'ሎ'?",
-      choices: ["le", "la", "lo"],
+      choices: ["pe", "la", "lo"],
       correctAnswer: "lo"
     },
     {
       question: "What is the sound for the letter 'ሐ'?",
-      choices: ["h", "ha", "he"],
-      correctAnswer: "h"
+      choices: ["nae", "be", "he"],
+      correctAnswer: "he"
     },
     {
       question: "What is the sound for the letter 'ሑ'?",
-      choices: ["he", "hu", "ha"],
+      choices: ["j'e", "hu", "n'e"],
      correctAnswer: "hu"
     },
     {
       question: "What is the sound for the letter 'ሒ'?",
-      choices: ["he", "hu", "hi"],
-      correctAnswer: "hi"
+      choices: ["ze", "hu", "hee"],
+      correctAnswer: "hee"
     },
     {
       question: "What is the sound for the letter 'ሓ'?",
-      choices: ["ha", "hi", "he"],
+      choices: ["ha", "hae", "ho"],
       correctAnswer: "ha"
     },
     {
       question: "What is the sound for the letter 'ሔ'?",
-      choices: ["he", "hu", "ha"],
-      correctAnswer: "he"
+      choices: ["ba", "be", "hae"],
+      correctAnswer: "hae"
     },
     {
       question: "What is the sound for the letter 'ሕ'?",
-      choices: ["he", "h", "hu"],
-      correctAnswer: "h"
+      choices: ["te", "h'i", "xu"],
+      correctAnswer: "h'i"
     },
     {
       question: "What is the sound for the letter 'ሖ'?",
-      choices: ["ha", "he", "ho"],
+      choices: ["ga", "ce", "ho"],
       correctAnswer: "ho"
     },
     {
       question: "What is the sound for the letter 'መ'?",
-      choices: ["m", "me", "ma"],
-      correctAnswer: "m"
+      choices: ["je", "me", "ma"],
+      correctAnswer: "me"
     },
     {
       question: "What is the sound for the letter 'ሙ'?",
-      choices: ["me", "mu", "mi"],
+      choices: ["d'i", "mu", "luu"],
       correctAnswer: "mu"
     },
     {
       question: "What is the sound for the letter 'ሚ'?",
-      choices: ["mu", "me", "mi"],
-      correctAnswer: "mi"
+      choices: ["ze", "m'o", "mee"],
+      correctAnswer: "mee"
     },
     {
       question: "What is the sound for the letter 'ማ'?",
-      choices: ["ma", "me", "mi"],
+      choices: ["ma", "re", "rae"],
       correctAnswer: "ma"
     },
     {
       question: "What is the sound for the letter 'ሜ'?",
-      choices: ["ma", "me", "mi"],
-      correctAnswer: "me"
+      choices: ["da", "mae", "si"],
+      correctAnswer: "mae"
     },
     {
       question: "What is the sound for the letter 'ም'?",
-      choices: ["mu", "mi", "m"],
-      correctAnswer: "m"
+      choices: ["qe", "m'i", "ne"],
+      correctAnswer: "m'i"
     },
     {
       question: "What is the sound for the letter 'ሞ'?",
-      choices: ["mo", "me", "mu"],
+      choices: ["mo", "ko", "lu"],
       correctAnswer: "mo"
     }
     ];
